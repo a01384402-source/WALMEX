@@ -74,3 +74,10 @@ new Chart(document.getElementById('fxChart'),{
       }}
   });
 })();
+
+/* Definitive peer-chart sizing safeguard */
+window.addEventListener('load', function () {
+  if (window.peerChart && typeof window.peerChart.resize === 'function') {
+    window.peerChart.resize();
+  }
+});

@@ -1,4 +1,4 @@
-# WALMEX — FINA 405 Dashboard FINAL.1
+# WALMEX — FINA 405 Dashboard FINAL — NO OVERLAP
 
 Academic dashboard for **Wal-Mart de México, S.A.B. de C.V. (WALMEX.MX)** and Mexico.
 
@@ -63,3 +63,7 @@ Peer Comparison was fully rebuilt as three independent normal-flow rows to elimi
 
 
 FINAL fix: rebuilt Peer Comparison layout and constrained EV/EBITDA chart to prevent any overlap with valuation tables or Country Overview.
+
+
+## Definitive layout correction
+EV/EBITDA is now a standalone full-width card with a bounded 340px canvas. Country Overview is structurally outside and after the complete Peer Comparison section.
