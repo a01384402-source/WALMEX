@@ -75,7 +75,22 @@
  </div>
 </section>
 
-<section id="peers" class="section">
+
+      <div class="section-head v2-head"><h3>Market Performance &amp; Ratio Trends</h3><span>Refinitiv · 5Y market context / FY2022–FY2025 ratios</span></div>
+      <div class="grid-2">
+        <article class="card">
+          <h4>WALMEX Stock Performance — 5Y Context</h4>
+          <p class="sub">Refinitiv chart supplied by the project team · 29 Sep 2021–29 Sep 2026</p>
+          <div class="stock-band">
+            <div><span>Last price</span><strong>MXN 46.81</strong></div><div><span>52W high</span><strong>MXN 63.97</strong></div>
+            <div><span>52W low</span><strong>MXN 44.80</strong></div><div><span>YTD</span><strong>−16.6%</strong></div><div><span>Beta</span><strong>0.84</strong></div>
+          </div>
+          <div class="callout compact"><strong>Market context:</strong> the supplied Refinitiv 5-year screen ends near the lower part of its displayed multi-year range. Daily prices are not reconstructed from the screenshot.</div>
+        </article>
+        <article class="card"><h4>Key Financial Ratio Trend</h4><p class="sub">Liquidity, leverage and debt-service capacity</p><canvas id="ratioChart"></canvas></article>
+      </div>
+
+    <section id="peers" class="section">
  <div class="section-title"><h2>Peer Comparison</h2><p>Refinitiv Peer Analysis · FY0 / latest displayed</p></div>
  <div class="grid-2">
   <div class="panel chart-card"><div class="chart-title">EV / EBITDA</div><div class="chart-sub">Selected retail comparables</div><canvas id="peerChart"></canvas></div>
@@ -110,7 +125,7 @@
   <div class="kpi"><div class="kpi-label">Est. 5Y CDS</div><div class="kpi-value">78.59</div><div class="kpi-note">bps · Bloomberg sovereign risk screen</div></div>
   <div class="kpi"><div class="kpi-label">Sovereign Ratings</div><div class="kpi-value" style="font-size:18px">BBB / Baa3 / BBB−</div><div class="kpi-note">S&P / Moody's / Fitch</div></div>
  </div>
- <div class="callout" style="margin-top:12px"><strong>Data discipline:</strong> Current account, a verified 10-year government yield and the corresponding term spread are intentionally not displayed as numeric KPIs because the supplied screenshots do not establish comparable values clearly enough. No values are invented.</div>
+ <div class="callout" style="margin-top:12px"><strong>Macro interpretation:</strong> The supplied Bloomberg screens show 1.42% GDP growth, 3.26% CPI inflation, a 6.50% Banxico policy rate, 2.65% unemployment and a 5-year sovereign yield near 8.97%. For WALMEX, this matters through consumer demand, financing/lease economics and the peso cost of USD-linked imports. <strong>Data discipline:</strong> current account, a verified 10-year government yield and term spread remain unfilled because the supplied evidence does not establish them clearly enough.</div>
 </section>
 
 <section id="fx" class="section">
@@ -133,7 +148,24 @@
   <div class="panel risk"><strong>Inflation / Margin Risk · Moderate</strong><p>Gross margin improved through 2025, while EBIT and net margins compressed, making cost and pricing dynamics important.</p></div>
  </div>
 </section>
-</main>
+
+    <section id="implications" class="section">
+      <div class="section-head"><h2>Risk Methodology &amp; Financing Implications</h2><span>Evidence-based synthesis · not a credit rating</span></div>
+      <div class="grid-3">
+        <article class="card risk-method"><h4>FX Risk · Moderate</h4><p><strong>Evidence:</strong> USD-linked imported merchandise/payables create transaction exposure; FX forwards are used for related obligations. The 2025 FX cash-flow effect was −MXN 2.77B.</p></article>
+        <article class="card risk-method"><h4>Interest-Rate Risk · Moderate</h4><p><strong>Evidence:</strong> Refinitiv shows no conventional bond/loan instruments, while balance-sheet debt is predominantly lease liabilities. Rates still affect lease economics, consumption and future funding conditions.</p></article>
+        <article class="card risk-method"><h4>Inflation / Margin Risk · Moderate</h4><p><strong>Evidence:</strong> gross margin improved through 2025, but EBIT margin moved from 8.30% in 2022 to 7.76% in 2025 and net margin from 5.98% to 4.93%.</p></article>
+      </div>
+      <div class="card implications-card"><h3>Financing Implications</h3><div class="implication-grid">
+        <div><strong>1 · Preserve flexibility</strong><p>Net Debt/EBITDA remains low at 0.51x, but cash declined while lease liabilities increased. Liquidity and lease commitments should be considered together.</p></div>
+        <div><strong>2 · Match the currency exposure</strong><p>The relevant FX channel is primarily transaction exposure from USD-agreed imports/payables. Short-horizon FX forwards directly address that exposure.</p></div>
+        <div><strong>3 · Watch debt-service capacity</strong><p>Interest coverage remains strong at 8.61x, although it declined from 9.65x in 2022. Incremental financing should be evaluated against this trend.</p></div>
+        <div><strong>4 · Protect operating margins</strong><p>Inflation and peso depreciation can raise merchandise costs. Pricing, sourcing and hedging therefore interact with financing strategy.</p></div>
+      </div></div>
+      <div class="card takeaways"><h3>Key Takeaways</h3><p><strong>Scale:</strong> FY2025 revenue exceeded MXN 1.0T and EBITDA was MXN 103.28B. <strong>Balance sheet:</strong> reported debt is largely lease-related rather than conventional bonds/loans. <strong>Risk:</strong> USD-linked imports make transaction FX exposure more relevant than revenue translation. <strong>Country:</strong> Mexico's rate and inflation environment is relevant to consumer demand, leases and working capital.</p></div>
+    </section>
+
+  </main>
 
 <footer class="footer"><div class="wrap"><strong>FINA 405 · WALMEX / Mexico</strong><br>Corporate data are based primarily on Refinitiv Workspace and Bloomberg screenshots supplied by the project team. Figures are shown in MXN unless explicitly stated otherwise. Peer absolute market values originally displayed in USD are not silently converted. This page is an academic dashboard, not investment advice.</div></footer>
 <script src="data.js"></script><script src="charts.js"></script>

@@ -92,5 +92,21 @@ window.WALMEX_DATA = {
   marketPosition: {
     modernGroceryShare2023: 32.5,
     note: "Modern grocery retail market share in Mexico (2023; external market evidence)."
+  },
+  stockPerformance: {
+    note: "Refinitiv 5Y chart supplied by the project team (29 Sep 2021–29 Sep 2026).",
+    current: 46.81, high52: 63.97, low52: 44.80, ytd: -16.6, beta: 0.84
+  },
+  ratioHistory: {
+    years: [2022, 2023, 2024, 2025],
+    currentRatio: [1.122, 1.023, 0.999, 0.967],
+    debtEquity: [34.49, 37.80, 34.24, 34.32],
+    netDebtEbitda: [0.257, 0.370, 0.433, 0.506],
+    interestCoverage: [9.65, 9.35, 9.00, 8.61]
+  },
+  marketPosition: {
+    modernGroceryShare2023: 32.5,
+    definition: "Mexico modern grocery retail market share (2023)",
+    source: "Tiendas 3B SEC filing citing Euromonitor"
   }
 };

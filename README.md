@@ -1,4 +1,4 @@
-# WALMEX — FINA 405 Dashboard
+# WALMEX — FINA 405 Dashboard V2
 
 Academic dashboard for **Wal-Mart de México, S.A.B. de C.V. (WALMEX.MX)** and Mexico.
 
@@ -30,3 +30,13 @@ The dashboard should then be available at your GitHub Pages URL.
 - Refinitiv's Debt Structure screen reported no outstanding conventional bond or loan instruments for WALMEX. Balance-sheet debt is primarily lease liabilities.
 - `Pretax ROA` is labeled as such because that is the definition displayed in Refinitiv Peer Analysis.
 - Missing macro values are not fabricated.
+
+
+## V2 additions
+- 5-year stock-performance context.
+- Historical ratio trend.
+- Market position and competitive landscape.
+- Expanded Mexico macro interpretation.
+- Explicit risk methodology and financing implications.
+- Final key takeaways.
+- Unsupported macro values remain disclosed rather than invented.

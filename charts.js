@@ -53,3 +53,13 @@ new Chart(document.getElementById('fxChart'),{
   data:{labels:D.fx.cashEffects.map(x=>x.year),datasets:[{label:'FX effect on cash flow',data:D.fx.cashEffects.map(x=>x.value),backgroundColor:D.fx.cashEffects.map(x=>x.value>=0?'#16805b':'#b33a3a')}]},
   options:{...base,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{ticks:{callback:v=>'MXN '+v+'B'}}}}
 });
+
+(() => {
+  const el=document.getElementById('ratioChart'); if(!el||typeof Chart==='undefined') return;
+  const d=window.WALMEX_DATA.ratioHistory;
+  new Chart(el,{type:'line',data:{labels:d.years,datasets:[
+    {label:'Current ratio (x)',data:d.currentRatio},
+    {label:'Net Debt / EBITDA (x)',data:d.netDebtEbitda},
+    {label:'Interest coverage (x)',data:d.interestCoverage}
+  ]},options:{responsive:true,plugins:{legend:{position:'top'}},scales:{y:{beginAtZero:true,title:{display:true,text:'x'}}}}});
+})();
