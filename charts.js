@@ -54,29 +54,23 @@ new Chart(document.getElementById('fxChart'),{
   options:{...base,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{ticks:{callback:v=>'MXN '+v+'B'}}}}
 });
 
-// V3: ratio trend with separate scale for interest coverage.
+// V3.1 ratio chart — explicit high-contrast rendering
 (() => {
-  const el = document.getElementById('ratioChart');
-  if (!el || typeof Chart === 'undefined') return;
-  const d = window.WALMEX_DATA.ratioHistory;
-  new Chart(el, {
+  const c=document.getElementById('ratioChart');
+  if(!c || typeof Chart==='undefined') return;
+  const d=window.WALMEX_DATA.ratioHistory;
+  new Chart(c,{
     type:'line',
-    data:{
-      labels:d.years,
-      datasets:[
-        {label:'Current ratio',data:d.currentRatio,borderColor:'#2d8fc3',backgroundColor:'#2d8fc3',borderWidth:3,pointRadius:4,tension:.25,yAxisID:'y'},
-        {label:'Net Debt / EBITDA',data:d.netDebtEbitda,borderColor:'#19865f',backgroundColor:'#19865f',borderWidth:3,pointRadius:4,tension:.25,yAxisID:'y'},
-        {label:'Interest coverage',data:d.interestCoverage,borderColor:'#b9780c',backgroundColor:'#b9780c',borderWidth:3,pointRadius:4,tension:.25,yAxisID:'y1'}
-      ]
-    },
-    options:{
-      responsive:true,maintainAspectRatio:true,
-      interaction:{mode:'index',intersect:false},
-      plugins:{legend:{position:'top',labels:{usePointStyle:true,boxWidth:8}}},
+    data:{labels:d.years,datasets:[
+      {label:'Current ratio',data:d.currentRatio,borderColor:'rgb(45,143,195)',backgroundColor:'rgb(45,143,195)',borderWidth:3,pointRadius:4,pointHoverRadius:6,tension:.2,yAxisID:'y'},
+      {label:'Net Debt / EBITDA',data:d.netDebtEbitda,borderColor:'rgb(25,134,95)',backgroundColor:'rgb(25,134,95)',borderWidth:3,pointRadius:4,pointHoverRadius:6,tension:.2,yAxisID:'y'},
+      {label:'Interest coverage',data:d.interestCoverage,borderColor:'rgb(185,120,12)',backgroundColor:'rgb(185,120,12)',borderWidth:3,pointRadius:4,pointHoverRadius:6,tension:.2,yAxisID:'y1'}
+    ]},
+    options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'top',labels:{usePointStyle:true}}},
       scales:{
-        y:{beginAtZero:true,suggestedMax:1.3,title:{display:true,text:'Liquidity / leverage (x)'},grid:{color:'#e5ebef'}},
-        y1:{beginAtZero:true,suggestedMax:11,position:'right',title:{display:true,text:'Interest coverage (x)'},grid:{drawOnChartArea:false}}
-      }
-    }
+        y:{beginAtZero:true,max:1.3,ticks:{color:'#52687a'},title:{display:true,text:'Liquidity / leverage (x)',color:'#52687a'},grid:{color:'#dfe7ec'}},
+        y1:{beginAtZero:true,max:11,position:'right',ticks:{color:'#52687a'},title:{display:true,text:'Interest coverage (x)',color:'#52687a'},grid:{drawOnChartArea:false}},
+        x:{ticks:{color:'#52687a'},grid:{color:'#eef2f5'}}
+      }}
   });
 })();

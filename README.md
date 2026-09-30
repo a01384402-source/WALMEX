@@ -1,4 +1,4 @@
-# WALMEX — FINA 405 Dashboard V3
+# WALMEX — FINA 405 Dashboard V3.1
 
 Academic dashboard for **Wal-Mart de México, S.A.B. de C.V. (WALMEX.MX)** and Mexico.
 
@@ -48,3 +48,11 @@ The dashboard should then be available at your GitHub Pages URL.
 - Ensured Market Position / Competitive Landscape is visible.
 - Added Implications to the sticky navigation.
 - Improved spacing and padding in Financing Implications and Key Takeaways.
+
+
+## V3.1 fixes
+- Fixed visible market-position block.
+- Fixed high-contrast ratio trend chart.
+- Fixed risk-methodology card layout.
+- Fixed Key Takeaways padding.
+- Ensured Implications navigation target is included.

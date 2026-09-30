@@ -73,3 +73,23 @@ nav a[href="#implications"]{display:inline-flex!important}
   .implication-grid{grid-template-columns:1fr!important}
   .stock-card,.ratio-card{min-height:auto}
 }
+
+/* V3.1 deterministic fixes */
+.market-v31{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 20px}
+.v31-panel,.risk-v31,.finance-v31{background:#fff;border:1px solid #d7e0e7;border-radius:11px;box-shadow:0 8px 22px rgba(18,43,63,.055);padding:20px}
+.market-share-panel{border-top:4px solid #2d8fc3}
+.v31-big{font-size:50px;font-weight:850;line-height:1;color:#123f63;margin:10px 0}
+.v31-chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.v31-chips span{padding:7px 11px;border-radius:999px;background:#eaf3f8;border:1px solid #d5e5ee;font-size:12px;font-weight:700}
+.v31-source{font-size:11px;color:#6b7d8e;margin-top:14px}
+.risk-v31-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:16px 0}
+.risk-v31{border-top:4px solid #b9780c}
+.risk-v31 h3{margin:0 0 12px}.risk-v31 p{margin:0;line-height:1.5;color:#3f5365}
+.finance-v31{border-left:5px solid #2d8fc3;margin-top:18px}
+.finance-v31 h3{margin:0 0 14px}
+.finance-v31-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.finance-v31-grid>div{background:#f5f8fa;border:1px solid #e3ebf0;border-radius:10px;padding:17px}
+.finance-v31-grid p{margin:6px 0 0;color:#516477;line-height:1.45}
+.takeaways-v31{margin-top:18px;background:linear-gradient(135deg,#0d2c47,#174f77);border-radius:11px;padding:24px 26px;color:#fff}
+.takeaways-v31 h3{margin:0 0 10px;color:#fff}.takeaways-v31 p{margin:0;color:#fff;line-height:1.55}
+@media(max-width:900px){.market-v31,.risk-v31-grid,.finance-v31-grid{grid-template-columns:1fr}}

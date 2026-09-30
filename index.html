@@ -14,7 +14,7 @@
   <p class="subtitle">Company & country risk dashboard · Mexico · Corporate figures in MXN</p>
 </div></header>
 <nav class="nav"><div class="wrap">
-  <a href="#overview">Business Overview</a><a href="#debt">Debt Structure</a><a href="#company">Company Analysis</a><a href="#peers">Peer Comparison</a><a href="#country">Country Overview</a><a href="#fx">FX & Currency Risk</a>
+  <a href="#overview">Business Overview</a><a href="#debt">Debt Structure</a><a href="#company">Company Analysis</a><a href="#peers">Peer Comparison</a><a href="#country">Country Overview</a><a href="#fx">FX & Currency Risk</a><a href="#implications">Implications</a>
 </div></nav>
 
 <main class="wrap">
@@ -93,7 +93,24 @@
     <section id="peers" class="section">
  <div class="section-title"><h2>Peer Comparison</h2><p>Refinitiv Peer Analysis · FY0 / latest displayed</p></div>
  <div class="grid-2">
-  <div class="panel chart-card"><div class="chart-title">EV / EBITDA</div><div class="chart-sub">Selected retail comparables</div><canvas id="peerChart"></canvas></div>
+  <div class="panel chart-card">
+      <div class="market-v31">
+        <article class="v31-panel market-share-panel">
+          <div class="eyebrow">MARKET POSITION</div>
+          <div class="v31-big">32.5%</div>
+          <h3>Mexico Modern Grocery Retail Market Share</h3>
+          <p>2023 estimate reported in a Tiendas 3B SEC filing citing Euromonitor. The figure refers specifically to <strong>modern grocery retail</strong>, not total Mexican retail.</p>
+          <div class="v31-source">Source: Tiendas 3B SEC filing citing Euromonitor (2023).</div>
+        </article>
+        <article class="v31-panel">
+          <div class="eyebrow">COMPETITIVE LANDSCAPE</div>
+          <h3>Financial Benchmarking Set</h3>
+          <p>WALMEX operates grocery, discount, hypermarket, membership-club and e-commerce formats. The companies below provide financial benchmarking and are not intended to represent only direct Mexican grocery competitors.</p>
+          <div class="v31-chips"><span>WALMEX</span><span>Liverpool</span><span>Falabella</span><span>Dollar General</span><span>Target</span></div>
+          <div class="v31-source">Peer metrics: Refinitiv Workspace, 29 Sep 2026.</div>
+        </article>
+      </div>
+<div class="chart-title">EV / EBITDA</div><div class="chart-sub">Selected retail comparables</div><canvas id="peerChart"></canvas></div>
   <div class="panel"><div class="chart-title">Profitability & Leverage</div><div class="chart-sub">Ratios are directly comparable; absolute peer values are not converted from USD.</div>
    <div style="overflow:auto"><table><thead><tr><th>Company</th><th>ROE</th><th>Pretax ROA</th><th>Net Margin</th><th>D/E</th></tr></thead><tbody>
     <tr class="highlight"><td>WALMEX</td><td>21.48%</td><td>13.9%</td><td>4.86%</td><td>34.3%</td></tr>
@@ -149,20 +166,30 @@
  </div>
 </section>
 
-    <section id="implications" class="section">
-      <div class="section-head"><h2>Risk Methodology &amp; Financing Implications</h2><span>Evidence-based synthesis · not a credit rating</span></div>
-      <div class="grid-3">
-        <article class="card v3-card risk-method"><h4>FX Risk · Moderate</h4><p><strong>Evidence:</strong> USD-linked imported merchandise/payables create transaction exposure; FX forwards are used for related obligations. The 2025 FX cash-flow effect was −MXN 2.77B.</p></article>
-        <article class="card v3-card risk-method"><h4>Interest-Rate Risk · Moderate</h4><p><strong>Evidence:</strong> Refinitiv shows no conventional bond/loan instruments, while balance-sheet debt is predominantly lease liabilities. Rates still affect lease economics, consumption and future funding conditions.</p></article>
-        <article class="card v3-card risk-method"><h4>Inflation / Margin Risk · Moderate</h4><p><strong>Evidence:</strong> gross margin improved through 2025, but EBIT margin moved from 8.30% in 2022 to 7.76% in 2025 and net margin from 5.98% to 4.93%.</p></article>
+    
+    <section id="implications" class="section implications-v31">
+      <div class="section-head">
+        <h2>Risk Methodology &amp; Financing Implications</h2>
+        <span>Evidence-based synthesis · not a credit rating</span>
       </div>
-      <div class="card v3-card implications-card"><h3>Financing Implications</h3><div class="implication-grid">
-        <div><strong>1 · Preserve flexibility</strong><p>Net Debt/EBITDA remains low at 0.51x, but cash declined while lease liabilities increased. Liquidity and lease commitments should be considered together.</p></div>
-        <div><strong>2 · Match the currency exposure</strong><p>The relevant FX channel is primarily transaction exposure from USD-agreed imports/payables. Short-horizon FX forwards directly address that exposure.</p></div>
-        <div><strong>3 · Watch debt-service capacity</strong><p>Interest coverage remains strong at 8.61x, although it declined from 9.65x in 2022. Incremental financing should be evaluated against this trend.</p></div>
-        <div><strong>4 · Protect operating margins</strong><p>Inflation and peso depreciation can raise merchandise costs. Pricing, sourcing and hedging therefore interact with financing strategy.</p></div>
-      </div></div>
-      <div class="card takeaways v3-takeaways"><h3>Key Takeaways</h3><p><strong>Scale:</strong> FY2025 revenue exceeded MXN 1.0T and EBITDA was MXN 103.28B. <strong>Balance sheet:</strong> reported debt is largely lease-related rather than conventional bonds/loans. <strong>Risk:</strong> USD-linked imports make transaction FX exposure more relevant than revenue translation. <strong>Country:</strong> Mexico's rate and inflation environment is relevant to consumer demand, leases and working capital.</p></div>
+      <div class="risk-v31-grid">
+        <article class="risk-v31"><h3>FX Risk · Moderate</h3><p><strong>Evidence:</strong> USD-linked imported merchandise/payables create transaction exposure; FX forwards are used for related obligations. The 2025 FX cash-flow effect was −MXN 2.77B.</p></article>
+        <article class="risk-v31"><h3>Interest-Rate Risk · Moderate</h3><p><strong>Evidence:</strong> Refinitiv shows no conventional bond/loan instruments, while balance-sheet debt is predominantly lease liabilities. Rates still affect lease economics, consumption and future funding conditions.</p></article>
+        <article class="risk-v31"><h3>Inflation / Margin Risk · Moderate</h3><p><strong>Evidence:</strong> gross margin improved through 2025, but EBIT margin moved from 8.30% in 2022 to 7.76% in 2025 and net margin from 5.98% to 4.93%.</p></article>
+      </div>
+      <div class="finance-v31">
+        <h3>Financing Implications</h3>
+        <div class="finance-v31-grid">
+          <div><strong>1 · Preserve flexibility</strong><p>Net Debt/EBITDA remains low at 0.51x, but cash declined while lease liabilities increased. Liquidity and lease commitments should be considered together.</p></div>
+          <div><strong>2 · Match the currency exposure</strong><p>The relevant FX channel is primarily transaction exposure from USD-agreed imports/payables. Short-horizon FX forwards directly address that exposure.</p></div>
+          <div><strong>3 · Watch debt-service capacity</strong><p>Interest coverage remains strong at 8.61x, although it declined from 9.65x in 2022. Incremental financing should be evaluated against this trend.</p></div>
+          <div><strong>4 · Protect operating margins</strong><p>Inflation and peso depreciation can raise merchandise costs. Pricing, sourcing and hedging therefore interact with financing strategy.</p></div>
+        </div>
+      </div>
+      <div class="takeaways-v31">
+        <h3>Key Takeaways</h3>
+        <p><strong>Scale:</strong> FY2025 revenue exceeded MXN 1.0T and EBITDA was MXN 103.28B. <strong>Balance sheet:</strong> reported debt is largely lease-related rather than conventional bonds/loans. <strong>Risk:</strong> USD-linked imports make transaction FX exposure more relevant than revenue translation. <strong>Country:</strong> Mexico's rate and inflation environment is relevant to consumer demand, leases and working capital.</p>
+      </div>
     </section>
 
   </main>
