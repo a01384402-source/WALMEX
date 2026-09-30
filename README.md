@@ -56,3 +56,7 @@ The dashboard should then be available at your GitHub Pages URL.
 - Fixed risk-methodology card layout.
 - Fixed Key Takeaways padding.
 - Ensured Implications navigation target is included.
+
+
+## Final release
+Peer Comparison was fully rebuilt as three independent normal-flow rows to eliminate overlap with the valuation table and Country Overview.
