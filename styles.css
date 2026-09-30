@@ -36,3 +36,40 @@ table{width:100%;border-collapse:collapse;font-size:12px}th{background:#eef3f7;c
 .risk-method{border-top:4px solid #bd7a0a}.implications-card{margin-top:16px;border-left:5px solid #2d8fc3}.implication-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:14px}.implication-grid div{background:#f5f8fa;border-radius:10px;padding:16px}.implication-grid p{margin:6px 0 0;color:#516477}
 .takeaways{margin-top:16px;background:linear-gradient(135deg,#0d2c47,#174f77);color:white}.takeaways h3,.takeaways p{color:white}
 @media(max-width:800px){.stock-band{grid-template-columns:repeat(2,1fr)}.implication-grid{grid-template-columns:1fr}}
+
+/* ===== V3 FINAL PRESENTATION POLISH ===== */
+.v3-head{margin-top:30px!important;margin-bottom:12px!important}
+.v3-card{
+  background:#fff!important;
+  border:1px solid #d8e1e8!important;
+  border-radius:12px!important;
+  box-shadow:0 10px 24px rgba(22,48,70,.06)!important;
+  padding:20px!important;
+  overflow:hidden;
+}
+.stock-card,.ratio-card{min-height:330px}
+.stock-band{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:10px!important;margin:22px 0!important}
+.stock-band>div{background:#f5f8fa!important;border:1px solid #d9e4eb!important;border-radius:10px!important;padding:14px 12px!important}
+.stock-band span{display:block!important;font-size:11px!important;text-transform:uppercase!important;letter-spacing:.08em!important;color:#64778a!important;font-weight:800!important}
+.stock-band strong{display:block!important;margin-top:5px!important;font-size:18px!important;color:#0c2942!important}
+.ratio-card canvas{max-height:255px!important}
+.v3-market{margin:18px 0 20px!important}
+.accent-card{border-top:4px solid #2d8fc3!important}
+.big-number{font-size:48px!important;font-weight:850!important;color:#123f63!important;line-height:1!important;margin:12px 0 10px!important}
+.chip-row{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:18px 0!important}
+.chip-row span{background:#eaf3f8!important;border:1px solid #d4e5ef!important;border-radius:999px!important;padding:7px 11px!important;font-size:12px!important;font-weight:750!important;color:#183b57!important}
+.risk-method{border-top:4px solid #b9780c!important;min-height:175px}
+#implications{padding-top:24px}
+#implications .grid-3{gap:14px}
+.implications-card{border-left:5px solid #2d8fc3!important;margin-top:18px!important}
+.implication-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important;margin-top:14px!important}
+.implication-grid>div{background:#f5f8fa!important;border:1px solid #e5edf2!important;border-radius:10px!important;padding:17px!important}
+.v3-takeaways{margin-top:18px!important;padding:22px!important;background:linear-gradient(135deg,#0d2c47,#174f77)!important;border-radius:12px!important;border:0!important}
+.v3-takeaways h3{margin-top:0!important;margin-bottom:10px!important;color:#fff!important}
+.v3-takeaways p{margin:0!important;color:#fff!important;line-height:1.55!important}
+nav a[href="#implications"]{display:inline-flex!important}
+@media(max-width:900px){
+  .stock-band{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .implication-grid{grid-template-columns:1fr!important}
+  .stock-card,.ratio-card{min-height:auto}
+}

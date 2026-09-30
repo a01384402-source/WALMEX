@@ -54,12 +54,29 @@ new Chart(document.getElementById('fxChart'),{
   options:{...base,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{ticks:{callback:v=>'MXN '+v+'B'}}}}
 });
 
+// V3: ratio trend with separate scale for interest coverage.
 (() => {
-  const el=document.getElementById('ratioChart'); if(!el||typeof Chart==='undefined') return;
-  const d=window.WALMEX_DATA.ratioHistory;
-  new Chart(el,{type:'line',data:{labels:d.years,datasets:[
-    {label:'Current ratio (x)',data:d.currentRatio},
-    {label:'Net Debt / EBITDA (x)',data:d.netDebtEbitda},
-    {label:'Interest coverage (x)',data:d.interestCoverage}
-  ]},options:{responsive:true,plugins:{legend:{position:'top'}},scales:{y:{beginAtZero:true,title:{display:true,text:'x'}}}}});
+  const el = document.getElementById('ratioChart');
+  if (!el || typeof Chart === 'undefined') return;
+  const d = window.WALMEX_DATA.ratioHistory;
+  new Chart(el, {
+    type:'line',
+    data:{
+      labels:d.years,
+      datasets:[
+        {label:'Current ratio',data:d.currentRatio,borderColor:'#2d8fc3',backgroundColor:'#2d8fc3',borderWidth:3,pointRadius:4,tension:.25,yAxisID:'y'},
+        {label:'Net Debt / EBITDA',data:d.netDebtEbitda,borderColor:'#19865f',backgroundColor:'#19865f',borderWidth:3,pointRadius:4,tension:.25,yAxisID:'y'},
+        {label:'Interest coverage',data:d.interestCoverage,borderColor:'#b9780c',backgroundColor:'#b9780c',borderWidth:3,pointRadius:4,tension:.25,yAxisID:'y1'}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:true,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{position:'top',labels:{usePointStyle:true,boxWidth:8}}},
+      scales:{
+        y:{beginAtZero:true,suggestedMax:1.3,title:{display:true,text:'Liquidity / leverage (x)'},grid:{color:'#e5ebef'}},
+        y1:{beginAtZero:true,suggestedMax:11,position:'right',title:{display:true,text:'Interest coverage (x)'},grid:{drawOnChartArea:false}}
+      }
+    }
+  });
 })();
