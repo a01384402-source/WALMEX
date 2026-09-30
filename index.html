@@ -90,30 +90,27 @@
         <article class="card v3-card ratio-card"><h4>Key Financial Ratio Trend</h4><p class="sub">Liquidity, leverage and debt-service capacity</p><canvas id="ratioChart"></canvas></article>
       </div>
 
-    <section id="peers" class="section peer-final">
+    <section id="peers" class="section peers-final">
  <div class="section-title"><h2>Peer Comparison</h2><p>Refinitiv Peer Analysis · FY0 / latest displayed</p></div>
 
- <div class="peer-market-final">
-  <div class="panel market-card-final">
-   <div class="eyebrow">Market Position</div>
-   <div class="share-final">32.5%</div>
+ <div class="peer-top-grid">
+  <div class="panel market-position-card">
+   <div class="eyebrow peer-eyebrow">Market Position</div>
+   <div class="big-number">32.5%</div>
    <h3>Mexico Modern Grocery Retail Market Share</h3>
    <p>2023 estimate reported in a Tiendas 3B SEC filing citing Euromonitor. The figure refers specifically to <strong>modern grocery retail</strong>, not total Mexican retail.</p>
    <div class="source">Source: Tiendas 3B SEC filing citing Euromonitor (2023).</div>
   </div>
-  <div class="panel market-card-final">
-   <div class="eyebrow">Competitive Landscape</div>
+  <div class="panel landscape-card">
+   <div class="eyebrow peer-eyebrow">Competitive Landscape</div>
    <h3>Financial Benchmarking Set</h3>
-   <p>WALMEX operates grocery, discount, hypermarket, membership-club and e-commerce formats. These companies provide financial benchmarking and are not intended to represent only direct Mexican grocery competitors.</p>
-   <div class="chips-final"><span>WALMEX</span><span>Liverpool</span><span>Falabella</span><span>Dollar General</span><span>Target</span></div>
+   <p>WALMEX operates grocery, discount, hypermarket, membership-club and e-commerce formats. The companies below provide financial benchmarking and are not intended to represent only direct Mexican grocery competitors.</p>
+   <div class="chip-row"><span>WALMEX</span><span>Liverpool</span><span>Falabella</span><span>Dollar General</span><span>Target</span></div>
    <div class="source">Peer metrics: Refinitiv Workspace, 29 Sep 2026.</div>
   </div>
- </div>
-
- <div class="peer-two-final">
-  <div class="panel chart-card"><div class="chart-title">EV / EBITDA</div><div class="chart-sub">Selected retail comparables</div><canvas id="peerChart"></canvas></div>
-  <div class="panel"><div class="chart-title">Profitability &amp; Leverage</div><div class="chart-sub">Ratios are directly comparable; absolute peer values are not converted from USD.</div>
-   <div class="table-scroll-final"><table><thead><tr><th>Company</th><th>ROE</th><th>Pretax ROA</th><th>Net Margin</th><th>D/E</th></tr></thead><tbody>
+  <div class="panel peer-profit-card">
+   <div class="chart-title">Profitability &amp; Leverage</div><div class="chart-sub">Ratios are directly comparable; absolute peer values are not converted from USD.</div>
+   <div class="table-scroll"><table><thead><tr><th>Company</th><th>ROE</th><th>Pretax ROA</th><th>Net Margin</th><th>D/E</th></tr></thead><tbody>
     <tr class="highlight"><td>WALMEX</td><td>21.48%</td><td>13.9%</td><td>4.86%</td><td>34.3%</td></tr>
     <tr><td>Liverpool</td><td>10.79%</td><td>7.9%</td><td>8.10%</td><td>30.9%</td></tr>
     <tr><td>Falabella</td><td>17.53%</td><td>10.1%</td><td>10.68%</td><td>53.4%</td></tr>
@@ -123,15 +120,20 @@
   </div>
  </div>
 
- <div class="panel valuation-final">
-  <div class="table-scroll-final"><table><thead><tr><th>Company</th><th>P/E FY0</th><th>EV/EBITDA FY0</th><th>P/B FY0</th><th>P/Revenue FY0</th></tr></thead><tbody>
+ <div class="panel peer-valuation-card">
+  <div class="chart-title">Valuation Multiples</div><div class="chart-sub">FY0 / latest displayed</div>
+  <div class="table-scroll"><table><thead><tr><th>Company</th><th>P/E FY0</th><th>EV/EBITDA FY0</th><th>P/B FY0</th><th>P/Revenue FY0</th></tr></thead><tbody>
    <tr class="highlight"><td>WALMEX</td><td>19.54x</td><td>9.90x</td><td>4.16x</td><td>0.96x</td></tr>
    <tr><td>Liverpool</td><td>7.84x</td><td>4.72x</td><td>0.75x</td><td>0.59x</td></tr>
    <tr><td>Falabella</td><td>11.52x</td><td>10.36x</td><td>1.95x</td><td>1.18x</td></tr>
    <tr><td>Dollar General</td><td>20.94x</td><td>10.59x</td><td>3.71x</td><td>0.74x</td></tr>
    <tr><td>Target</td><td>12.97x</td><td>7.53x</td><td>2.95x</td><td>0.46x</td></tr>
-  </tbody></table></div>
-  <div class="source">Source: Refinitiv Workspace Peer Analysis screenshots, 29 Sep 2026.</div>
+  </tbody></table></div><div class="source">Source: Refinitiv Workspace Peer Analysis screenshots, 29 Sep 2026.</div>
+ </div>
+
+ <div class="panel peer-chart-final">
+  <div class="chart-title">EV / EBITDA</div><div class="chart-sub">Selected retail comparables</div>
+  <div class="peer-canvas-wrap"><canvas id="peerChart"></canvas></div>
  </div>
 </section>
 

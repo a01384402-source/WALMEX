@@ -108,3 +108,23 @@ nav a[href="#implications"]{display:inline-flex!important}
 .table-scroll-final{overflow-x:auto!important;width:100%!important}.peer-final table{width:100%!important;position:static!important}
 #country{clear:both!important;position:relative!important;margin-top:0!important}
 @media(max-width:900px){.peer-market-final,.peer-two-final{grid-template-columns:1fr!important}}
+
+
+/* ===== FINAL: PEER SECTION OVERLAP FIX ===== */
+.peers-final{clear:both;overflow:visible}
+.peer-top-grid{display:grid;grid-template-columns:.78fr .78fr 1.7fr;gap:12px;align-items:stretch;margin-bottom:12px}
+.peer-top-grid>.panel{min-width:0;height:auto;position:relative;z-index:1}
+.peer-eyebrow{color:#66727f;opacity:1}
+.market-position-card{border-top:4px solid #2d8fc3;padding:20px}
+.market-position-card h3,.landscape-card h3{margin:8px 0 12px;color:#0b1f33;line-height:1.12}
+.market-position-card p,.landscape-card p{font-size:13px;line-height:1.45;margin:0;color:#33495c}
+.landscape-card{padding:20px}
+.peer-profit-card{padding:18px}
+.table-scroll{overflow-x:auto;overflow-y:hidden;width:100%}
+.peer-valuation-card{margin-top:12px;padding:18px;position:relative;z-index:1}
+.peer-chart-final{margin-top:12px;padding:18px;height:350px;position:relative;z-index:1;overflow:hidden}
+.peer-canvas-wrap{position:relative;width:100%;height:275px;overflow:hidden}
+.peer-canvas-wrap canvas{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:275px!important}
+#country{clear:both;margin-top:30px}
+@media(max-width:1050px){.peer-top-grid{grid-template-columns:1fr 1fr}.peer-profit-card{grid-column:1/-1}}
+@media(max-width:700px){.peer-top-grid{grid-template-columns:1fr}.peer-profit-card{grid-column:auto}.peer-chart-final{height:330px}.peer-canvas-wrap{height:250px}}
